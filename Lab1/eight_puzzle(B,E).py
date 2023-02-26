@@ -150,7 +150,6 @@ if __name__ == '__main__':
         row = [int(x) for x in input('Enter value of row ' + str(i + 1) + ': ').split()]
         config.append(row)
 
-    # config = [[7, 2, 8], [6, 5, 3], [0, 1, 4]]  
 
     depth = int(input('\nEnter depth value: '))
     runtime, memory_required = eight_puzzle(config, depth)
