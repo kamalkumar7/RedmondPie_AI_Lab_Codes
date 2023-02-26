@@ -129,7 +129,6 @@ def eight_puzzle(config, depth):
     runtime = end_time - start_time
     memory_required = h.heap().size
 
-    # COMMENT/UNCOMMENT THE FOLLOWING SNIPPET TO TOGGLE PRINTING THE GENERATED INSTANCES
     print('\n')
     print(f'8-Puzzle instances generated at depth {depth}:')
     for instance in instances:
@@ -145,7 +144,6 @@ if __name__ == '__main__':
     print('1. Each of the following input lines for the configuration require 3 space separated entries.')
     print('2. Valid configuration values for entries are 0-8 (each entry should be unique), with 0 representing the void/empty space.')
 
-    # COMMENT/UNCOMMENT THE FOLLOWING SNIPPET TO TOGGLE USER INPUT FOR START NODE CONFIGURATION
     config = []
     print('\nStart state input:\n')
     for i in range(3):
