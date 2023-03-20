@@ -1,0 +1,20 @@
+Question 1. How are MENACE, State Space Search, MDP and RL correlated?
+Answer: MENACE (Matchbox Educable Noughts And Crosses Engine) is a learning algorithm for playing the game of Tic Tac Toe. It uses a form of reinforcement learning to adjust its behavior based on the outcomes of previous games. MENACE can be seen as a primitive form of a reinforcement learning algorithm, since it updates its behavior based on the reward signal obtained through winning or losing a game.
+
+State space search and MDP (Markov Decision Process) are two common frameworks for modeling sequential decision-making problems in artificial intelligence. State space search involves exploring the space of possible states and actions in order to find an optimal solution to a problem, whereas MDP models the environment as a probabilistic transition function, which defines the probability of transitioning from one state to another given an action. Both state space search and MDP can be used to solve a wide range of problems, including games like Tic Tac Toe.
+
+Reinforcement learning (RL) is a subfield of machine learning that deals with how an agent can learn to make decisions based on feedback from the environment in the form of rewards or punishments. RL algorithms aim to maximize the expected cumulative reward over time by learning a policy that maps states to actions. In this sense, MENACE can be seen as a primitive form of RL algorithm, since it updates its behavior based on the reward signal obtained through winning or losing a game.
+
+In summary, MENACE, state space search, MDP, and RL are all related to decision-making in artificial intelligence. MENACE is a primitive form of RL algorithm that uses reinforcement learning to learn to play Tic Tac Toe. State space search and MDP are frameworks for modeling sequential decision-making problems, which can be used to solve games like Tic Tac Toe, and RL algorithms aim to learn optimal decision-making policies based on feedback from the environment.
+
+
+
+Question 2. How does playing first reduces the number of matchboxes in MENACE?
+Answer: In MENACE (Matchbox Educable Noughts And Crosses Engine), the number of matchboxes used by the algorithm depends on which player starts the game. If MENACE plays first, it will only need to learn and store matchboxes for the first move, since the game board will always be in the same initial state. On the other hand, if MENACE plays second, it will need to learn and store matchboxes for each possible board state after the opponent's first move, which can result in a much larger number of matchboxes.
+
+To see why this is the case, consider the following example: if MENACE plays first, it only needs to learn and store a single matchbox for the first move, which will always correspond to the center of the board. However, if MENACE plays second, it will need to learn and store matchboxes for each possible board state after the opponent's first move, which can result in up to nine different matchboxes. As the game progresses, the number of possible board states grows exponentially, and so does the number of matchboxes needed to represent them.
+
+By playing first, MENACE reduces the number of matchboxes it needs to learn and store, which can make the learning process more efficient and effective. However, this advantage comes at the cost of not having the opportunity to observe the opponent's first move, which can be a valuable source of information for learning a better strategy.
+
+
+
